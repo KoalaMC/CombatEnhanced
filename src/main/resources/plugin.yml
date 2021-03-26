@@ -1,0 +1,6 @@
+name: CombatEnhanced
+version: ${project.version}
+main: io.github.rickyc0626.CombatEnhanced
+api-version: 1.15
+authors: [ RickyC0626 ]
+description: Enhanced player movement, weapon mechanics, custom enhantments
