@@ -21,10 +21,7 @@ public class CommandHandler implements CommandExecutor
         if(label.matches("(?i)cbe"))
         {
             if(args.length == 0) return getExecutor("cbe").onCommand(sender, command, label, args);
-            else
-            {
-                return exists(args[0]);
-            }
+            if(exists(args[0])) return getExecutor(args[0].toLowerCase()).onCommand(sender, command, label, args);
         }
         return false;
     }
